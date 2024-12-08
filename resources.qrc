@@ -1,0 +1,34 @@
+<RCC>
+  <qresource>
+    <file>image/kisspng-payment-gateway-credit-card-computer-icons-point-o-automotive-industry-business-card-5ad93c4a689256.4385955015241861864283.jpg</file>
+    <file>image/20220212_iMpgOSqkTjUngVM94L5MQw41.png</file>
+    <file>image/dashboard.png</file>
+    <file>image/anh khoa.jpg</file>
+    <file>image/dashboard_white.png</file>
+    <file>image/image.png</file>
+    <file>image/log_out.png</file>
+    <file>image/log_out_white.png</file>
+    <file>image/menu.png</file>
+    <file>image/messages.png</file>
+    <file>image/messages_white.png</file>
+    <file>image/notifications.png</file>
+    <file>image/notifications_white.png</file>
+    <file>image/profile.png</file>
+    <file>image/profile_pic.png</file>
+    <file>image/profile_white.png</file>
+    <file>image/search.png</file>
+    <file>image/settings.png</file>
+    <file>image/settings_white.png</file>
+    <file>image/logo_admin.png</file>
+    <file>image/lopHoc.png</file>
+    <file>image/diemDanh.png</file>
+    <file>image/qlyLopHoc.png</file>
+    <file>image/sinhVien.png</file>
+  <file>image/lopHoc2.png</file>
+    <file>image/diemDanh2.png</file>
+    <file>image/qlyLopHoc2.png</file>
+    <file>image/sinhVien2.png</file>
+
+  </qresource>
+  <qresource/>
+</RCC>

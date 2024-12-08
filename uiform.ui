@@ -1,0 +1,2376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>963</width>
+    <height>751</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(229, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="2">
+     <widget class="QWidget" name="main_menu" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QWidget" name="header_widget" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPushButton" name="menu">
+            <property name="styleSheet">
+             <string notr="true">border:none;
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="resources.qrc">
+              <normaloff>:/image/menu.png</normaloff>:/image/menu.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>196</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_61">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Quản lý sinh viên</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout"/>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>196</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_26">
+            <property name="styleSheet">
+             <string notr="true">border:none;
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/image/image.png</normaloff>:/image/image.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="focusPolicy">
+          <enum>Qt::WheelFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="currentIndex">
+          <number>4</number>
+         </property>
+         <widget class="QWidget" name="sinhVien_page">
+          <widget class="QPushButton" name="btn_xoaSV">
+           <property name="geometry">
+            <rect>
+             <x>550</x>
+             <y>250</y>
+             <width>71</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>Xóa</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btn_themSV">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>250</y>
+             <width>71</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Thêm </string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>10</y>
+             <width>631</width>
+             <height>231</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="title">
+            <string>Thông tin sinh viên</string>
+           </property>
+           <widget class="QLabel" name="label_14">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>140</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Khoa</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_15">
+            <property name="geometry">
+             <rect>
+              <x>350</x>
+              <y>90</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Địa chỉ</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_16">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>40</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Mã sinh viên</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_17">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Tên sinh viên</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_18">
+            <property name="geometry">
+             <rect>
+              <x>350</x>
+              <y>40</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Giới tính</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_19">
+            <property name="geometry">
+             <rect>
+              <x>350</x>
+              <y>140</y>
+              <width>121</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Dữ liệu khuôn mặt</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_masvSV">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>40</y>
+              <width>151</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_tensvSV">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>90</y>
+              <width>151</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_khoaSV">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>140</y>
+              <width>151</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_diaChiSV">
+            <property name="geometry">
+             <rect>
+              <x>440</x>
+              <y>90</y>
+              <width>151</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="ccb_genderSV">
+            <property name="geometry">
+             <rect>
+              <x>440</x>
+              <y>40</y>
+              <width>111</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Nam</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nữ</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QPushButton" name="btn_addFace">
+            <property name="geometry">
+             <rect>
+              <x>500</x>
+              <y>140</y>
+              <width>71</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(170, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Click</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_faceCoding">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="geometry">
+             <rect>
+              <x>350</x>
+              <y>180</y>
+              <width>251</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QLineEdit" name="txt_timKiemSV">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>310</y>
+             <width>181</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string>Nhập tên sinh viên</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btn_timKiemSV">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>310</y>
+             <width>81</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(203, 203, 203);</string>
+           </property>
+           <property name="text">
+            <string>Tìm kiếm</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btn_suaSV">
+           <property name="geometry">
+            <rect>
+             <x>450</x>
+             <y>250</y>
+             <width>71</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Sửa</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_4">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>350</y>
+             <width>631</width>
+             <height>291</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="title">
+            <string>Danh sách sinh viên</string>
+           </property>
+           <widget class="QTableWidget" name="tbl_sinhVien">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>591</width>
+              <height>241</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="giangVien_page">
+          <widget class="QPushButton" name="btn_themGV">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>240</y>
+             <width>81</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Thêm</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="txt_timKiemGV">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>340</y>
+             <width>181</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string>Nhập tên giảng viên</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btn_timKiemGV">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>340</y>
+             <width>81</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(203, 203, 203);</string>
+           </property>
+           <property name="text">
+            <string>Tìm kiếm</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btn_xoaGV">
+           <property name="geometry">
+            <rect>
+             <x>570</x>
+             <y>240</y>
+             <width>81</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>Xóa</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>10</y>
+             <width>641</width>
+             <height>221</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="title">
+            <string>Thông tin giảng viên</string>
+           </property>
+           <widget class="QLabel" name="label">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>40</y>
+              <width>111</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Mã giảng viên</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_5">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>80</y>
+              <width>111</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Tên giảng viên</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_9">
+            <property name="geometry">
+             <rect>
+              <x>360</x>
+              <y>30</y>
+              <width>111</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Giới tính </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_10">
+            <property name="geometry">
+             <rect>
+              <x>360</x>
+              <y>130</y>
+              <width>111</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Số điện thoại </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_11">
+            <property name="geometry">
+             <rect>
+              <x>360</x>
+              <y>80</y>
+              <width>111</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Địa chỉ</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_magv">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>30</y>
+              <width>141</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_tengv">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>80</y>
+              <width>141</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="ccb_genderGV">
+            <property name="geometry">
+             <rect>
+              <x>480</x>
+              <y>30</y>
+              <width>91</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Nam</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nữ</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Khác</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QLineEdit" name="txt_sdtGV">
+            <property name="geometry">
+             <rect>
+              <x>480</x>
+              <y>130</y>
+              <width>141</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="username">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>130</y>
+              <width>141</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_31">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>130</y>
+              <width>111</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Tên đăng nhập</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="password">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>180</y>
+              <width>141</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_32">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>180</y>
+              <width>111</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Mật khẩu</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_34">
+            <property name="geometry">
+             <rect>
+              <x>360</x>
+              <y>180</y>
+              <width>111</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Email</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_emailGV">
+            <property name="geometry">
+             <rect>
+              <x>480</x>
+              <y>180</y>
+              <width>141</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_diaChiGV">
+            <property name="geometry">
+             <rect>
+              <x>480</x>
+              <y>80</y>
+              <width>141</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>380</y>
+             <width>661</width>
+             <height>251</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="title">
+            <string>Danh sách giảng viên</string>
+           </property>
+           <widget class="QTableWidget" name="tbl_giangVien">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>641</width>
+              <height>221</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QPushButton" name="btn_suaGV">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>240</y>
+             <width>81</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Sửa</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="lopHoc_page">
+          <widget class="QLineEdit" name="txt_timKiemLH">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>290</y>
+             <width>181</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string>Nhập tên lớp học</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_7">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>10</y>
+             <width>661</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(198, 250, 255);</string>
+           </property>
+           <property name="title">
+            <string>Thông tin lớp học</string>
+           </property>
+           <widget class="QLabel" name="label_23">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Mã lớp học</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_maLop">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>30</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_24">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>80</y>
+              <width>111</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Giảng viên quản lý</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_27">
+            <property name="geometry">
+             <rect>
+              <x>360</x>
+              <y>20</y>
+              <width>121</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Tên lớp học</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_tenlopHoc">
+            <property name="geometry">
+             <rect>
+              <x>500</x>
+              <y>30</y>
+              <width>113</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_28">
+            <property name="geometry">
+             <rect>
+              <x>360</x>
+              <y>80</y>
+              <width>101</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Số tín</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="ccb_giangVien">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>80</y>
+              <width>141</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_soTin">
+            <property name="geometry">
+             <rect>
+              <x>500</x>
+              <y>80</y>
+              <width>113</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QPushButton" name="btn_suaLopHoc">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>160</y>
+             <width>81</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Sửa</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_8">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>340</y>
+             <width>671</width>
+             <height>291</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Danh sách lớp học</string>
+           </property>
+           <widget class="QTableWidget" name="tbl_lopHoc">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>641</width>
+              <height>261</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QPushButton" name="btn_themLopHoc">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>160</y>
+             <width>81</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Thêm</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btn_xoaLopHoc">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>160</y>
+             <width>81</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>Xóa</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btn_timKiemLH">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>290</y>
+             <width>81</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(203, 203, 203);</string>
+           </property>
+           <property name="text">
+            <string>Tìm kiếm</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="quanLyLopHoc">
+          <widget class="QPushButton" name="btn_addDS">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>170</y>
+             <width>81</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Thêm</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_10">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>681</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(198, 250, 255);</string>
+           </property>
+           <property name="title">
+            <string>Thông tin lớp học</string>
+           </property>
+           <widget class="QLabel" name="label_26">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Tên lớp học</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_giangVienQL">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>80</y>
+              <width>151</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_29">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>80</y>
+              <width>111</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Giảng viên quản lý</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_30">
+            <property name="geometry">
+             <rect>
+              <x>360</x>
+              <y>20</y>
+              <width>121</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Tên sinh viên</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_tenSinhVienQL">
+            <property name="geometry">
+             <rect>
+              <x>500</x>
+              <y>30</y>
+              <width>113</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_35">
+            <property name="geometry">
+             <rect>
+              <x>360</x>
+              <y>80</y>
+              <width>101</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Mã sinh viên</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="ccb_lopHocQL">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>30</y>
+              <width>151</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_masvQL">
+            <property name="geometry">
+             <rect>
+              <x>500</x>
+              <y>80</y>
+              <width>113</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_11">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>330</y>
+             <width>681</width>
+             <height>311</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Danh sách sinh viên</string>
+           </property>
+           <widget class="QTableWidget" name="tbl_sinhVienQL">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>641</width>
+              <height>281</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QPushButton" name="btn_danhSachLop">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>290</y>
+             <width>101</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Danh sách lớp </string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btn_danhSachSinhVien">
+           <property name="geometry">
+            <rect>
+             <x>530</x>
+             <y>290</y>
+             <width>131</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Danh sách sinh viên</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btn_xoaDS">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>170</y>
+             <width>81</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>Xóa</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="diemDanh_page">
+          <widget class="QGroupBox" name="groupBox_12">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>30</y>
+             <width>311</width>
+             <height>181</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="title">
+            <string>Thông tin lớp học</string>
+           </property>
+           <widget class="QLabel" name="label_8">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>55</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Lớp học</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_giangVienDD">
+            <property name="geometry">
+             <rect>
+              <x>110</x>
+              <y>80</y>
+              <width>171</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="ccb_lopHocDD">
+            <property name="geometry">
+             <rect>
+              <x>110</x>
+              <y>20</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_25">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>80</y>
+              <width>81</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Giảng viên</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_ngayDD">
+            <property name="geometry">
+             <rect>
+              <x>110</x>
+              <y>130</y>
+              <width>171</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_59">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>130</y>
+              <width>81</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Ngày</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_9">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>300</y>
+             <width>661</width>
+             <height>341</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Danh sách sinh viên</string>
+           </property>
+           <widget class="QTableWidget" name="tbl_danhSachDD">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>621</width>
+              <height>291</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_13">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>30</y>
+             <width>301</width>
+             <height>181</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="title">
+            <string>Thông tin lớp học</string>
+           </property>
+           <widget class="QLabel" name="label_41">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>91</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Mã sinh viên</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_tensvDD">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>80</y>
+              <width>121</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_42">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>80</y>
+              <width>81</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Tên sinh viên</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_43">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>130</y>
+              <width>81</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="ccb_tinhTrang">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>130</y>
+              <width>111</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <item>
+             <property name="text">
+              <string>Có mặt</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Đi muộn</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nghỉ</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QLabel" name="label_58">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>130</y>
+              <width>81</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Tình trạng</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_masvDD">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>20</y>
+              <width>121</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QPushButton" name="btn_danhSachDD">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>250</y>
+             <width>131</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Danh sách sinh viên</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btn_diemDanh">
+           <property name="geometry">
+            <rect>
+             <x>540</x>
+             <y>250</y>
+             <width>101</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Điểm danh</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btn_xacThucKhuonMat">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>250</y>
+             <width>151</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Xác thực khuôn mặt</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btn_excel">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>250</y>
+             <width>101</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 255, 0);</string>
+           </property>
+           <property name="text">
+            <string>Xuất file Excel</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QWidget" name="icon_onl_widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(31, 149, 239);
+}
+QPushButton{
+ 	color : white;
+	height : 30px;
+	border :none;
+	border-radius:10px;
+}
+QPushButton:checked {
+	background-color:#F5FAFE;
+	color:#1F95EF;
+	font-weight:bold;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/image/logo_admin.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="sinhVien_1">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/image/sinhVien.png</normaloff>
+             <normalon>:/image/sinhVien2.png</normalon>:/image/sinhVien.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="giangVien_1">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/image/profile_white.png</normaloff>
+             <normalon>:/image/profile.png</normalon>:/image/profile_white.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="lopHoc_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/image/lopHoc.png</normaloff>
+             <normalon>:/image/lopHoc2.png</normalon>:/image/lopHoc.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="quanLyLopHoc_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/image/qlyLopHoc.png</normaloff>
+             <normalon>:/image/qlyLopHoc2.png</normalon>:/image/qlyLopHoc.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="diemDanh_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/image/diemDanh.png</normaloff>
+             <normalon>:/image/diemDanh2.png</normalon>:/image/diemDanh.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>17</width>
+           <height>455</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="dangXuat_1">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/image/log_out_white.png</normaloff>:/image/log_out_white.png</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QWidget" name="icon_name_widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(31, 149, 239);
+	color:white;
+}
+QPushButton{
+ 	color : white;
+	text-align : left;
+	height : 30px;
+	border :none;
+	padding-left:10px;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+}
+QPushButton:checked {
+	background-color:#F5FAFE;
+	color:#1F95EF;
+	font-weight:bold;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="rightMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/image/logo_admin.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="role_app">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Role</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QPushButton" name="sinhVien_2">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Sinh Viên</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/image/sinhVien.png</normaloff>
+             <normalon>:/image/sinhVien2.png</normalon>:/image/sinhVien.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="giangVien_2">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Giảng Viên</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/image/profile_white.png</normaloff>
+             <normalon>:/image/profile.png</normalon>:/image/profile_white.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="lopHoc_2">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Lớp học</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/image/lopHoc.png</normaloff>
+             <normalon>:/image/lopHoc2.png</normalon>:/image/lopHoc.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="quanLyLopHoc_2">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Quản lý lớp học</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/image/qlyLopHoc.png</normaloff>
+             <normalon>:/image/qlyLopHoc2.png</normalon>:/image/qlyLopHoc.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="diemDanh_2">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Điểm danh</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/image/diemDanh.png</normaloff>
+             <normalon>:/image/diemDanh2.png</normalon>:/image/diemDanh.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>377</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="dangXuat_2">
+         <property name="text">
+          <string>Đăng xuất</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/image/log_out_white.png</normaloff>:/image/log_out_white.png</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon_onl_widget</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>262</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>59</x>
+     <y>298</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon_name_widget</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>268</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>220</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quanLyLopHoc_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>quanLyLopHoc_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>37</x>
+     <y>276</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>77</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lopHoc_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lopHoc_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>46</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>85</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>giangVien_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>giangVien_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>86</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sinhVien_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>sinhVien_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>37</x>
+     <y>92</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sinhVien_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>sinhVien_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>32</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>giangVien_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>giangVien_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>81</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>41</x>
+     <y>144</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lopHoc_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lopHoc_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>80</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>37</x>
+     <y>237</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quanLyLopHoc_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>quanLyLopHoc_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>77</x>
+     <y>281</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>44</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dangXuat_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>33</x>
+     <y>696</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>38</x>
+     <y>803</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dangXuat_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>700</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>140</x>
+     <y>848</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
